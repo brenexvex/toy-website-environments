@@ -30,7 +30,7 @@ jobs:
       AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
 
   # Deploy the production environment.
-    deploy-production:
+  deploy-production:
       uses: ./.github/workflows/deploy.yml
       needs: deploy-test
       with:
